@@ -1,6 +1,6 @@
 # Yii2 JWT
 
-![](https://travis-ci.org/sizeg/yii2-jwt.svg)
+![](https://travis-ci.org/matheust45/yii2-jwt.svg)
 
 This extension provides the [JWT](https://github.com/lcobucci/jwt) integration for the [Yii framework 2.0](http://www.yiiframework.com) (requires PHP 5.6+).
 It includes basic HTTP authentication support.
@@ -21,11 +21,11 @@ It includes basic HTTP authentication support.
 <a name="installation"></a>
 ## Installation
 
-Package is available on [Packagist](https://packagist.org/packages/sizeg/yii2-jwt),
+Package is available on [Packagist](https://packagist.org/packages/matheust45/yii2-jwt),
 you can install it using [Composer](http://getcomposer.org).
 
 ```shell
-composer require sizeg/yii2-jwt
+composer require matheust45/yii2-jwt
 ```
 
 <a name="dependencies"></a>
@@ -43,7 +43,7 @@ Add `jwt` component to your configuration file,
 ```php
 'components' => [
     'jwt' => [
-      'class' => \sizeg\jwt\Jwt::class,
+      'class' => \matheust45\jwt\Jwt::class,
       'key'   => 'secret',
     ],
 ],
@@ -64,7 +64,7 @@ class ExampleController extends \yii\rest\Controller
     {
         $behaviors = parent::behaviors();
         $behaviors['authenticator'] = [
-            'class' => \sizeg\jwt\JwtHttpBearerAuth::class,
+            'class' => \matheust45\jwt\JwtHttpBearerAuth::class,
         ];
 
         return $behaviors;
@@ -146,10 +146,10 @@ then token is still considered valid
 ```php
 'components' => [
     'jwt' => [
-        'class' => \sizeg\jwt\Jwt:class,
+        'class' => \matheust45\jwt\Jwt:class,
         'key'   => 'secret',
         'jwtValidationData' => [
-            'class' => \sizeg\jwt\JwtValidationData::class,
+            'class' => \matheust45\jwt\JwtValidationData::class,
              // configure leeway 
             'leeway' => 20,
         ],
@@ -277,7 +277,7 @@ var_dump($token->verify($signer, $publicKey)); // true when the public key was g
 2. Install component
 
     ```shell
-    composer require sizeg/yii2-jwt
+    composer require matheust45/yii2-jwt
     ```
 
 3. Add to config/web.php into `components` section
@@ -287,7 +287,7 @@ var_dump($token->verify($signer, $publicKey)); // true when the public key was g
         'components' => [
             // other default components here..
             'jwt' => [
-                'class' => \sizeg\jwt\Jwt::class,
+                'class' => \matheust45\jwt\Jwt::class,
                 'key' => 'secret',
                 // You have to configure ValidationData informing all claims you want to validate the token.
                 'jwtValidationData' => \app\components\JwtValidationData::class,
@@ -303,7 +303,7 @@ var_dump($token->verify($signer, $publicKey)); // true when the public key was g
     
     namespace app\components;
     
-    class JwtValidationData extends \sizeg\jwt\JwtValidationData
+    class JwtValidationData extends \matheust45\jwt\JwtValidationData
     {
      
         /**
@@ -346,8 +346,8 @@ var_dump($token->verify($signer, $publicKey)); // true when the public key was g
     
     namespace app\controllers;
     
-    use sizeg\jwt\Jwt;
-    use sizeg\jwt\JwtHttpBearerAuth;
+    use matheust45\jwt\Jwt;
+    use matheust45\jwt\JwtHttpBearerAuth;
     use Yii;
     use yii\rest\Controller;
     
