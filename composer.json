@@ -5,15 +5,14 @@
 	"keywords": ["yii2", "yii 2", "jwt"],
 	"authors": [
         {
-            "name": "Dmitriy Demin",
-            "email": "sizemail@gmail.com",
-            "homepage": "https://sizeg.tk"
+            "name": "Matheus Tavares",
+            "email": "matheus.tavares45@gmail.com",
+            "homepage": "https://matheust45.github.io/"
         }
     ],
-    "license": "BSD-3-Clause",
     "require": {
-        "php": ">=5.6.0",
-        "lcobucci/jwt": "~3.3.0",
+        "php": ">=5.5.0",
+        "lcobucci/jwt": "~3.2.0",
         "yiisoft/yii2": "~2.0.0"
     },
 	"require-dev": {
@@ -36,3 +35,4 @@
         }
     ]    
 }
+
