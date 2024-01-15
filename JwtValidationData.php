@@ -1,6 +1,6 @@
 <?php
 
-namespace sizeg\jwt;
+namespace matheust45\jwt;
 
 use Lcobucci\JWT\ValidationData;
 use yii\base\Component;

@@ -1,6 +1,6 @@
 <?php
 
-namespace sizeg\jwt;
+namespace matheust45\jwt;
 
 use Lcobucci\JWT\Builder;
 use Lcobucci\JWT\Claim\Factory as ClaimFactory;
@@ -46,7 +46,7 @@ class Jwt extends Component
     public $key;
 
     /**
-     * @var string|array|callable \sizeg\jwtJwtValidationData
+     * @var string|array|callable \matheust45\jwtJwtValidationData
      * @see [[Yii::createObject()]]
      */
     public $jwtValidationData = JwtValidationData::class;

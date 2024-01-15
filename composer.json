@@ -1,38 +1,41 @@
 {
-    "name": "matheust45/yii2-jwt",
-    "description": "JWT based on Icobucci",
-	"type": "yii2-extension",
-	"keywords": ["yii2", "yii 2", "jwt"],
-	"authors": [
-        {
-            "name": "Matheus Tavares",
-            "email": "matheus.tavares45@gmail.com",
-            "homepage": "https://matheust45.github.io/"
-        }
-    ],
-    "require": {
-        "php": ">=5.5.0",
-        "lcobucci/jwt": "~3.2.0",
-        "yiisoft/yii2": "~2.0.0"
-    },
-	"require-dev": {
-		"phpunit/phpunit": "^4.8"
-	},
-    "autoload": {
-        "psr-4": {
-            "sizeg\\jwt\\": ""
-        }
-    },
-	"autoload-dev": {
-        "psr-4": {
-            "sizeg\\jwt\\tests\\": "tests/"
-        }
-    },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://asset-packagist.org"
-        }
-    ]    
+  "name": "matheust45/yii2-jwt",
+  "description": "JWT based on Icobucci",
+  "type": "yii2-extension",
+  "keywords": [
+    "yii2",
+    "yii 2",
+    "jwt"
+  ],
+  "authors": [
+    {
+      "name": "Matheus Tavares",
+      "email": "matheus.tavares45@gmail.com",
+      "homepage": "https://matheust45.github.io/"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "lcobucci/jwt": "~3.2.0",
+    "yiisoft/yii2": "~2.0.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "matheust45\\jwt\\": ""
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "matheust45\\jwt\\tests\\": "tests/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ]
 }
-

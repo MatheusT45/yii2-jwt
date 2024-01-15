@@ -1,6 +1,6 @@
 <?php
 
-namespace sizeg\jwt\tests;
+namespace matheust45\jwt\tests;
 
 use yii\console\Application;
 
