@@ -2,7 +2,7 @@
 
 namespace matheust45\jwt;
 
-use Lcobucci\JWT\ValidationData;
+use Matheust45\JWT\ValidationData;
 use yii\base\Component;
 
 /**

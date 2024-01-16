@@ -45,7 +45,7 @@ class JwtTest extends TestCase
      */
     public function getSignerSha256()
     {
-        return new \Lcobucci\JWT\Signer\Hmac\Sha256();
+        return new \Matheust45\JWT\Signer\Hmac\Sha256();
     }
 
     /**

@@ -2,22 +2,22 @@
 
 namespace matheust45\jwt;
 
-use Lcobucci\JWT\Builder;
-use Lcobucci\JWT\Claim\Factory as ClaimFactory;
-use Lcobucci\JWT\Parser;
-use Lcobucci\JWT\Parsing\Decoder;
-use Lcobucci\JWT\Parsing\Encoder;
-use Lcobucci\JWT\Signer;
-use Lcobucci\JWT\Signer\Key;
-use Lcobucci\JWT\Token;
-use Lcobucci\JWT\ValidationData;
+use Matheust45\JWT\Builder;
+use Matheust45\JWT\Claim\Factory as ClaimFactory;
+use Matheust45\JWT\Parser;
+use Matheust45\JWT\Parsing\Decoder;
+use Matheust45\JWT\Parsing\Encoder;
+use Matheust45\JWT\Signer;
+use Matheust45\JWT\Signer\Key;
+use Matheust45\JWT\Token;
+use Matheust45\JWT\ValidationData;
 use Yii;
 use yii\base\Component;
 use yii\base\InvalidArgumentException;
 
 /**
  * JSON Web Token implementation, based on this library:
- * https://github.com/lcobucci/jwt
+ * https://github.com/matheust45/jwt
  *
  * @author Dmitriy Demin <sizemail@gmail.com>
  * @since 1.0.0-a
@@ -29,15 +29,15 @@ class Jwt extends Component
      * @var array Supported algorithms
      */
     public $supportedAlgs = [
-        'HS256' => \Lcobucci\JWT\Signer\Hmac\Sha256::class,
-        'HS384' => \Lcobucci\JWT\Signer\Hmac\Sha384::class,
-        'HS512' => \Lcobucci\JWT\Signer\Hmac\Sha512::class,
-        'ES256' => \Lcobucci\JWT\Signer\Ecdsa\Sha256::class,
-        'ES384' => \Lcobucci\JWT\Signer\Ecdsa\Sha384::class,
-        'ES512' => \Lcobucci\JWT\Signer\Ecdsa\Sha512::class,
-        'RS256' => \Lcobucci\JWT\Signer\Rsa\Sha256::class,
-        'RS384' => \Lcobucci\JWT\Signer\Rsa\Sha384::class,
-        'RS512' => \Lcobucci\JWT\Signer\Rsa\Sha512::class,
+        'HS256' => \Matheust45\JWT\Signer\Hmac\Sha256::class,
+        'HS384' => \Matheust45\JWT\Signer\Hmac\Sha384::class,
+        'HS512' => \Matheust45\JWT\Signer\Hmac\Sha512::class,
+        'ES256' => \Matheust45\JWT\Signer\Ecdsa\Sha256::class,
+        'ES384' => \Matheust45\JWT\Signer\Ecdsa\Sha384::class,
+        'ES512' => \Matheust45\JWT\Signer\Ecdsa\Sha512::class,
+        'RS256' => \Matheust45\JWT\Signer\Rsa\Sha256::class,
+        'RS384' => \Matheust45\JWT\Signer\Rsa\Sha384::class,
+        'RS512' => \Matheust45\JWT\Signer\Rsa\Sha512::class,
     ];
 
     /**
@@ -52,7 +52,7 @@ class Jwt extends Component
     public $jwtValidationData = JwtValidationData::class;
 
     /**
-     * @see [[Lcobucci\JWT\Builder::__construct()]]
+     * @see [[Matheust45\JWT\Builder::__construct()]]
      * @param Encoder|null $encoder
      * @param ClaimFactory|null $claimFactory
      * @return Builder
@@ -63,7 +63,7 @@ class Jwt extends Component
     }
 
     /**
-     * @see [[Lcobucci\JWT\Parser::__construct()]]
+     * @see [[Matheust45\JWT\Parser::__construct()]]
      * @param Decoder|null $decoder
      * @param ClaimFactory|null $claimFactory
      * @return Parser
@@ -74,7 +74,7 @@ class Jwt extends Component
     }
 
     /**
-     * @see [[Lcobucci\JWT\ValidationData::__construct()]]
+     * @see [[Matheust45\JWT\ValidationData::__construct()]]
      * @return ValidationData
      */
     public function getValidationData()
